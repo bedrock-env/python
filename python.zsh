@@ -1,6 +1,6 @@
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
@@ -13,6 +13,6 @@ fi
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
 
-syspip2() {
-   PIP_REQUIRE_VIRTUALENV="" pip2 "$@"
+syspip() {
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
