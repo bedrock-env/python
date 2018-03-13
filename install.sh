@@ -6,12 +6,12 @@
 
 if [ "$(uname -s)" == "Darwin" ]
 then
-  if [ `which python` != "/usr/local/bin/python" ]
+  if [ `which python` != "/usr/local/bin/python3" ]
   then
     echo "  Installing Python for you."
     brew install python
-    PIP_REQUIRE_VIRTUALENV="" pip install --upgrade pip setuptools
-    PIP_REQUIRE_VIRTUALENV="" pip install virtualenv virtualenvwrapper psutil
+    PIP_REQUIRE_VIRTUALENV="" pip3 install --upgrade pip setuptools
+    PIP_REQUIRE_VIRTUALENV="" pip3 install virtualenv virtualenvwrapper psutil
   fi
 fi
 
