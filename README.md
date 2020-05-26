@@ -1,5 +1,7 @@
 # python
 
+**This extension is currently unmaintained**
+
 python is an extension for the [bedrock](https://github.com/bedrock-env/ack)
 project to provide python in the bedrock environment.
 
